@@ -1,0 +1,81 @@
+<html>
+<style type="text/css">
+	.dives{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 100vh;
+	}
+	.headtext{
+		font-family: 'Arial Rounded MT Bold';
+		font-size: 20;
+	}
+	.under-text{
+		display: flex;
+		color: #8c9398;
+		font-size: 18;
+		text-align: center;
+		width: 90%;
+		font-family: 'Arial Rounded MT Bold';
+	}
+	.under-head{
+		display: flex;
+		font-size: 20;
+		font-family: 'Arial Rounded MT Bold', bold;
+	}
+	.d1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.hhr{
+		color: #3dc9b3;
+		width: 45;
+		background-color: #3dc9b3;
+		height: 0.5;
+	}
+</style>
+<head>
+    <title>Title</title>
+</head>
+
+<body>
+	<head>
+		<h1 align="center" class="headtext" 
+		>LOVE WHAT YOU DO, AND YOU'LL DO IT WELL</h1>
+	</head>
+    <div class="dives">
+    	<div class="d1">
+    		<img src="computer.png" id="computer">
+    		<p class="under-head">
+    			DIGITAL DESIGN//</p>
+    		<hr class="hhr">
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p></div>
+    	<div class="d1">
+    		<img src="code.png" id="code">
+    		<p class="under-head">WEB DEVELOPMENT//</p>
+    		<hr class="hhr">
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    	</div>
+    	<div class="d1">
+    		<img src="heart.png" id="heart">
+    		<p class="under-head">WE LOVE YOU//</p>
+    		<hr class="hhr">
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    	</div>
+    </div>
+ <script type="text/javascript">
+	let computer = document.getElementById('computer');
+	let code = document.getElementById('code');
+	let heart = document.getElementById('heart');
+
+	computer.addEventListener('click', function func(){alert("Компьютер")})
+	code.addEventListener('click', function func(){alert("Код")})
+	heart.addEventListener('click', function func(){alert("Сердце")});
+</script>
+    	
+</body>
+
+
+</html>
