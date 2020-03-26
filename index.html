@@ -47,7 +47,7 @@
 		max-width: 100%;
 	}
 	.icons{
-		width: 20%;
+		width: 15vh;
 		display: flex;
 		justify-content: space-around;
 		flex-direction: row;
@@ -55,12 +55,29 @@
 	.icon-block:hover{
 		background-color: #57d0bd;
 	}
+	.card{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		background-color: white;
+		width: 40vh;
+		height: 15vh;
+		border-radius: 5%;
+	}
+	.cards{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 65%;
+	}
 </style>
 <head>
     <title>Title</title>
 </head>
 
-<body>
+<body bgcolor="#F3F5F7">
 	<head>
 		<p align="center" class="headtext" 
 		>WE'RE A TEAM THAT ADORE WHAT WE DO</p>
@@ -119,5 +136,62 @@
     		</div>
     	</div>
     </div>
+    <p align="center" class="headtext">DROP US A LINE</p>
+    <div style="
+    display: flex;
+    justify-content: center;
+    width: 100%;">
+    	<div class="cards" id="cards"></div>
+	</div>
+<!----На часах 5 утра, мне лень делать css классы ~_+---->
+	<div style="
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;"><div class="icons">
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="o.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="twitter.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="mail.png"></div></div></div></div>
+
+    <!--bottom border-->
+    <div style="display: flex; align-self: end; justify-content: flex-end; width: 100%;height: 10vh;background-color: #23272F"></div>
+    
+ <script type="text/javascript">
+ 	class Card{
+ 		constructor(src, title, info){
+ 			this.src = src;
+ 			this.title = title;
+ 			this.info = info;
+ 		}
+ 	}
+
+ 	let card1 = new Card("Pin.png", "ADDRESS", "Level 6, 23 Pitt St. Sydney")
+ 	let card2 = new Card("Phone.png", "PHONE", "+61 9 211 3741")
+ 	let card3 = new Card("Message.png", "EMAIL", "hey@halcyon.com.au")
+ 	let card_arr = [card1, card2, card3]
+ 	let div_cards = document.getElementById('cards');
+// Типа умный )
+ 	card_arr.forEach(
+ 		function(item){
+ 			let html = `<div class="card">
+ 			<img src="${item.src}">
+ 			<p class="headtext" style="color: #57d0bd">${item.title}</p>
+ 			<p style="
+ 			color: #8c9398;
+ 			font-family: 'Arial Rounded MT Bold';
+ 			">${item.info}</p></div>`
+ 			let new_div = document.createElement('div');
+ 			new_div.innerHTML = html;
+ 			div_cards.appendChild(new_div);
+ 		})
+ 	
+
+ </script>
 </body>
 </html>
