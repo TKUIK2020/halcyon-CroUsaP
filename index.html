@@ -4,7 +4,7 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		height: 100vh;
+		height: 80vh;
 	}
 	.headtext{
 		font-family: 'Arial Rounded MT Bold';
@@ -35,6 +35,26 @@
 		background-color: #3dc9b3;
 		height: 0.5;
 	}
+	.icon-block{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #23272F;
+		width: 35;
+		height: 35;
+		border-radius: 50%;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.icons{
+		width: 20%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.icon-block:hover{
+		background-color: #57d0bd;
+	}
 </style>
 <head>
     <title>Title</title>
@@ -42,40 +62,62 @@
 
 <body>
 	<head>
-		<h1 align="center" class="headtext" 
-		>LOVE WHAT YOU DO, AND YOU'LL DO IT WELL</h1>
+		<p align="center" class="headtext" 
+		>WE'RE A TEAM THAT ADORE WHAT WE DO</p>
 	</head>
     <div class="dives">
     	<div class="d1">
-    		<img src="computer.png" id="computer">
+    		<img src="John.png">
     		<p class="under-head">
-    			DIGITAL DESIGN//</p>
+    			JON SNOW</p>
     		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p></div>
-    	<div class="d1">
-    		<img src="code.png" id="code">
-    		<p class="under-head">WEB DEVELOPMENT//</p>
-    		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    		<div class="icons">
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="o.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="twitter.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="mail.png"></div></div>
+    		</div>
     	</div>
     	<div class="d1">
-    		<img src="heart.png" id="heart">
-    		<p class="under-head">WE LOVE YOU//</p>
+    		<img src="Cersei.png">
+    		<p class="under-head">CERSEI LANNISTER</p>
     		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    		<div class="icons">
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="o.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="twitter.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="mail.png"></div></div>
+    		</div>
+    	</div>
+    	<div class="d1">
+    		<img src="Janei.png">
+    		<p class="under-head">JAMIE LANNISTER</p>
+    		<hr class="hhr">
+    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    		<div class="icons">
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="o.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="twitter.png"></div></div>
+	    		<div class="icon-block">
+	    			<div class="icon">
+	    				<img src="mail.png"></div></div>
+    		</div>
     	</div>
     </div>
- <script type="text/javascript">
-	let computer = document.getElementById('computer');
-	let code = document.getElementById('code');
-	let heart = document.getElementById('heart');
-
-	computer.addEventListener('click', function func(){alert("Компьютер")})
-	code.addEventListener('click', function func(){alert("Код")})
-	heart.addEventListener('click', function func(){alert("Сердце")});
-</script>
-    	
 </body>
-
-
 </html>
