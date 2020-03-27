@@ -1,197 +1,30 @@
-<html>
-<style type="text/css">
-	.dives{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 80vh;
-	}
-	.headtext{
-		font-family: 'Arial Rounded MT Bold';
-		font-size: 20;
-	}
-	.under-text{
-		display: flex;
-		color: #8c9398;
-		font-size: 18;
-		text-align: center;
-		width: 90%;
-		font-family: 'Arial Rounded MT Bold';
-	}
-	.under-head{
-		display: flex;
-		font-size: 20;
-		font-family: 'Arial Rounded MT Bold', bold;
-	}
-	.d1{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.hhr{
-		color: #3dc9b3;
-		width: 45;
-		background-color: #3dc9b3;
-		height: 0.5;
-	}
-	.icon-block{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #23272F;
-		width: 35;
-		height: 35;
-		border-radius: 50%;
-		max-height: 100%;
-		max-width: 100%;
-	}
-	.icons{
-		width: 15vh;
-		display: flex;
-		justify-content: space-around;
-		flex-direction: row;
-	}
-	.icon-block:hover{
-		background-color: #57d0bd;
-	}
-	.card{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		background-color: white;
-		width: 40vh;
-		height: 15vh;
-		border-radius: 5%;
-	}
-	.cards{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		width: 65%;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
-    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колеров Сайт</title>
 </head>
 
-<body bgcolor="#F3F5F7">
-	<head>
-		<p align="center" class="headtext" 
-		>WE'RE A TEAM THAT ADORE WHAT WE DO</p>
-	</head>
-    <div class="dives">
-    	<div class="d1">
-    		<img src="John.png">
-    		<p class="under-head">
-    			JON SNOW</p>
-    		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-    		<div class="icons">
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="o.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="twitter.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="mail.png"></div></div>
-    		</div>
-    	</div>
-    	<div class="d1">
-    		<img src="Cersei.png">
-    		<p class="under-head">CERSEI LANNISTER</p>
-    		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-    		<div class="icons">
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="o.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="twitter.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="mail.png"></div></div>
-    		</div>
-    	</div>
-    	<div class="d1">
-    		<img src="Janei.png">
-    		<p class="under-head">JAMIE LANNISTER</p>
-    		<hr class="hhr">
-    		<p class="under-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-    		<div class="icons">
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="o.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="twitter.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="mail.png"></div></div>
-    		</div>
-    	</div>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <p class="text text--capitilize text--big">I got 99 problems</p>
+            <p class="text text--capitilize">But <em>design</em> ' aint one</p>
+        </div>
+        <!-- карточки здесь -->
+        <div id="cards" class="cards"></div>
     </div>
-    <p align="center" class="headtext">DROP US A LINE</p>
-    <div style="
-    display: flex;
-    justify-content: center;
-    width: 100%;">
-    	<div class="cards" id="cards"></div>
-	</div>
-<!----На часах 5 утра, мне лень делать css классы ~_+---->
-	<div style="
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 20vh;"><div class="icons">
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="o.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="twitter.png"></div></div>
-	    		<div class="icon-block">
-	    			<div class="icon">
-	    				<img src="mail.png"></div></div></div></div>
-
-    <!--bottom border-->
-    <div style="display: flex; align-self: end; justify-content: flex-end; width: 100%;height: 10vh;background-color: #23272F"></div>
-    
- <script type="text/javascript">
- 	class Card{
- 		constructor(src, title, info){
- 			this.src = src;
- 			this.title = title;
- 			this.info = info;
- 		}
- 	}
-
- 	let card1 = new Card("Pin.png", "ADDRESS", "Level 6, 23 Pitt St. Sydney")
- 	let card2 = new Card("Phone.png", "PHONE", "+61 9 211 3741")
- 	let card3 = new Card("Message.png", "EMAIL", "hey@halcyon.com.au")
- 	let card_arr = [card1, card2, card3]
- 	let div_cards = document.getElementById('cards');
-// Типа умный )
- 	card_arr.forEach(
- 		function(item){
- 			let html = `<div class="card">
- 			<img src="${item.src}">
- 			<p class="headtext" style="color: #57d0bd">${item.title}</p>
- 			<p style="
- 			color: #8c9398;
- 			font-family: 'Arial Rounded MT Bold';
- 			">${item.info}</p></div>`
- 			let new_div = document.createElement('div');
- 			new_div.innerHTML = html;
- 			div_cards.appendChild(new_div);
- 		})
- 	
-
- </script>
+    <footer id="footer">
+        <a id="footer-button" href="https://vk.com/crousap">
+            <p>IGNITE YOUR PASSION</p>
+        </a>
+    </footer>
+    <!-- код -->
+    <script src="code.js"></script>
 </body>
+
 </html>
