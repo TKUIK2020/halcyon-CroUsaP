@@ -15,18 +15,15 @@ fetchSome()
     })
     .catch(e => console.error(e))
 
-    cards_arr.forEach((item) => {
-        let html = `
-    <div class="card-image-box">
-        <img class="card-image" src="${item.image}" alt="">
-    </div>
-    <div class="card-headtext">${item.head}</div>
-    <div class="line"></div>
-    <div class="card-text">${item.text}</div>`
-        let new_div = document.createElement('div')
-        new_div.className = "card"
-        new_div.innerHTML = html
-        div_cards.appendChild(new_div)
-    })
+async function fetchSomeAsync() {
+    console.log("Async fetch started")
+    try {
+        const respone = await fetch(url)
+        const data = await respone.json()
+        console.log("Data: ", data)
+    } catch (e) {
+        console.error(e)
+    }
 }
-createCards()
+
+fetchSomeAsync()
