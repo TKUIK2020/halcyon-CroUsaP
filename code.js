@@ -5,9 +5,6 @@ function fetchSome() {
     return fetch(url)
         .then(respone => respone.json())
 }
-    }
-    let div_cards = document.getElementById('cards')
-    const prim_text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero"
 
 fetchSome()
     .then(data => {
