@@ -1,19 +1,19 @@
-function createCards() {
-    class Cards {
-        constructor(image, head, text) {
-            this.image = image
-            this.head = head
-            this.text = text
-        }
+const url = "https://jsonplaceholder.typicode.com/posts?userId=1"
+
+function fetchSome() {
+    console.log("Fetch started")
+    return fetch(url)
+        .then(respone => respone.json())
+}
     }
     let div_cards = document.getElementById('cards')
     const prim_text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero"
 
-    let cards_arr = [
-        new Cards("lab6/mind.png", "CREATIVE MIND", prim_text),
-        new Cards("lab6/think.png", "THINK ALIVE", prim_text),
-        new Cards("lab6/dog.png", "PIXEL PERFECTION", prim_text)
-    ]
+fetchSome()
+    .then(data => {
+        console.log("Data: ", data)
+    })
+    .catch(e => console.error(e))
 
     cards_arr.forEach((item) => {
         let html = `
