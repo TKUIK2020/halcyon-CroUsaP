@@ -13,102 +13,73 @@ a {
     text-decoration: none;
 }
 
-#header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-    min-width: 190vh;
-    background: url(lab7/bg.png) no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    background-position: 50%;
-    margin-top: -5px;
-    text-align: center;
-}
-
 .text {
     margin: 0 auto;
     font-family: 'Varela Round';
-    text-align: center;
+    color: #f2f2f2;
 }
 
-#header .heading {
-    font-size: 40px;
-    letter-spacing: 10px;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 20vh;
-}
-
-.heading #days {
-    font-size: 40px;
-    letter-spacing: 10px;
-    color: rgba(0, 0, 0, .5);
-    text-align: center;
-    font-family: 'Varela Round';
-    margin-top: 20vh;
-}
-
-.main .heading {
-    text-transform: uppercase;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Varela Round';
-    font-size: 25px;
-}
-
-.main .underhead {
-    width: 50%;
-    margin-bottom: 100px;
-}
-
-.main .underhead #bold {
-    color: rgba(0, 0, 0, 1);
-}
-
-.underhead {
-    font-size: 16px;
-    color: rgba(0, 0, 0, .5);
-    margin-top: 5vh;
-}
-
-#mid-button {
-    margin-top: 50px;
-    border: 1px solid rgba(44, 199, 173, 1);
-    background-color: rgba(44, 199, 173, 1);
-    box-shadow: 0 3px rgba(63, 137, 124, 1);
-    width: 130px;
-    height: 30px;
-    border-radius: 3px;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-}
-
-#mid-button:hover {
-    opacity: 80%;
-}
-
-#top-button {
-    image-rendering: crisp-edges;
-    height: 25px;
-    width: 25px;
-    background: url(lab7/mobile_nav.png) no-repeat;
+#image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(lab9/bg.png) no-repeat;
+    min-width: 155vh;
+    height: 500px;
+    background-position: center;
     background-size: 100%;
-    margin-left: 69%;
-    margin-top: 50px;
+    margin-left: -2px;
 }
 
-#top-button:hover {
-    opacity: 80%;
+#image-block img {
+    padding-bottom: 15px;
 }
 
-#line {
-    background: url(lab7/strelka.png) no-repeat center bottom;
-    background-size: 300px;
-    image-rendering: optimizeQuality;
+#image-block p {
+    font-size: 18px;
     padding-bottom: 30px;
-    font-weight: bold;
+}
+
+#send-bar {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+#emailin {
+    width: 300px;
+    background-color: transparent;
+    border: 0.2px solid rgba(212, 212, 212, 0.897);
+    border-radius: 1px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#send-bar input:focus {
+    /* background-color: #25d425; */
+    background-color: #e4e4e452;
+}
+
+#send-bar button:active {
+    background-color: rgb(49, 160, 143);
+}
+
+#send-bar button {
+    border: none;
+    border-radius: 1px;
+    margin-left: 5px;
+    width: 100px;
+    height: 100%;
+    background-color: rgb(60, 200, 179);
+    outline: none;
+}
+
+#send-bar button p {
+    padding-top: 20%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

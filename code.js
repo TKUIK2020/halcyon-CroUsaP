@@ -1,26 +1,22 @@
-const url = "https://jsonplaceholder.typicode.com/posts?userId=1"
+const button = document.getElementById('submit')
+const input = document.getElementById('emailin')
 
-function fetchSome() {
-    console.log("Fetch started")
-    return fetch(url)
-        .then(respone => respone.json())
-}
+let regexp = /[-.\w]+@([\w-]+\.)+[\w-]+/g
 
-fetchSome()
-    .then(data => {
-        console.log("Data: ", data)
-    })
-    .catch(e => console.error(e))
-
-async function fetchSomeAsync() {
-    console.log("Async fetch started")
-    try {
-        const respone = await fetch(url)
-        const data = await respone.json()
-        console.log("Data: ", data)
-    } catch (e) {
-        console.error(e)
+function checker() {
+    if (input.value.replace(/ /g, "").match(regexp)) {
+        input.style.borderColor = "#d4d4d4e5"
+        localStorage.setItem("email", input.value)
+    } else {
+        input.style.borderColor = "#ff3636e5"
+        console.log("no")
     }
 }
 
-fetchSomeAsync()
+// У меня по каким-то причинам не получилось с присвоением класса error, поэтому я сделал просто через ред. стилей
+
+let prevEm = localStorage.getItem("email")
+
+if (prevEm != null) {
+    input.value = prevEm
+}
