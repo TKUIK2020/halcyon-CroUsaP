@@ -1,6 +1,5 @@
 require("http").createServer((req, res) => {
     let file = req.url.substr(1)
-    let ext = file.split('.')[1]
     console.log(`Запрашиваемый url: ${req.url}`)
     require('fs').readFile(file, (err, oFile) => {
         if (err) {
