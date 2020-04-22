@@ -11,4 +11,3 @@ node_modules/
 npm-debug.*
 source/css/*.css
 Thumbs.db
-lab10/3_lab11/package-lock.json
