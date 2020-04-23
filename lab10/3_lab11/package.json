@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "random-joke-getter": "^2.0.3"
+    "random-joke-getter": "^1.1.11"
   }
 }
