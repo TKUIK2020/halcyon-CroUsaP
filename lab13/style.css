@@ -1,0 +1,46 @@
+.title {
+    border: rgb(100, 100, 100) solid 1px;
+    padding: 4px;
+    background-color: rgb(211, 211, 211);   
+}
+
+.text {
+    border-top: none;
+    padding: 6px;
+    border: 1px solid rgb(100, 100, 100);  
+}
+
+.button {
+    width: auto;
+    height: auto;
+    background-color: rgb(85, 170, 255);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.modalWin1 {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    margin: 25px;
+    width: 400px;
+}
+
+.modalWin2 {
+    width: 100%;
+    min-height: 60px;
+    max-height: auto;
+    border-top: 1px solid rgb(100, 100, 100);
+    padding: 6px;
+    display: flex;
+}
+
+.backspace {
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    border: none;
+    margin-left: auto;
+    height: 30px;
+}
