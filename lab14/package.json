@@ -1,0 +1,38 @@
+{
+    "name": "halcyon-crousap-master",
+    "version": "1.0.0",
+    "main": "joke.js",
+    "scripts": {
+        "build": "webpack",
+        "watch": "webpack --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/runtime": "^7.9.6",
+        "random-joke-getter": "^2.0.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/node": "^7.8.7",
+        "@babel/plugin-transform-runtime": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "babel-loader": "^8.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TKUIK2020/halcyon-CroUsaP.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TKUIK2020/halcyon-CroUsaP/issues"
+    },
+    "homepage": "https://github.com/TKUIK2020/halcyon-CroUsaP#readme",
+    "description": "lab14"
+}
