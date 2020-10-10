@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    margin: 0 auto;
+    font-family: 'Varela Round';
+    color: #f2f2f2;
+}
+
+#image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(lab9/bg.png) no-repeat;
+    min-width: 155vh;
+    height: 500px;
+    background-position: center;
+    background-size: 100%;
+    margin-left: -2px;
+}
+
+#image-block img {
+    padding-bottom: 15px;
+}
+
+#image-block p {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+#send-bar {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+#emailin {
+    width: 300px;
+    background-color: transparent;
+    border: 0.2px solid rgba(212, 212, 212, 0.897);
+    border-radius: 1px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#send-bar input:focus {
+    /* background-color: #25d425; */
+    background-color: #e4e4e452;
+}
+
+#send-bar button:active {
+    background-color: rgb(49, 160, 143);
+}
+
+#send-bar button {
+    border: none;
+    border-radius: 1px;
+    margin-left: 5px;
+    width: 100px;
+    height: 100%;
+    background-color: rgb(60, 200, 179);
+    outline: none;
+}
+
+#send-bar button p {
+    padding-top: 20%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

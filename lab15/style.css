@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+}
+.wrapper {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+}
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0;
+}
+.posts {
+  margin-top: 50px;
+}
+.posts .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.posts .wrapper .card {
+  flex-basis: 32%;
+  margin-bottom: 2%;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.posts .wrapper .card:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.14);
+}
+
